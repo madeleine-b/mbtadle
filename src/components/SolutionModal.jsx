@@ -22,7 +22,7 @@ const SolutionModal = (props) => {
   const modal = useRef(null);
   const trip = todaysTrip();
   const solution = todaysSolution();
-  const title = isGameWon ? "Yay! You completed today's trip!" : "Aww, looks like you got lost on the subway...";
+  const title = isGameWon ? "Yay! You completed today's trip!" : "Aww, looks like you got lost on the T...";
   const isIos = /iP(ad|od|hone)/i.test(window.navigator.userAgent) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 2 && /MacIntel/.test(navigator.platform));
 
   const handleShareClick = () => {
@@ -66,7 +66,6 @@ const SolutionModal = (props) => {
       <Modal.Header>{ title }</Modal.Header>
       <Modal.Content>
         <Modal.Description>
-        <MapFrame />
           <Header as='h3'>Today's Journey</Header>
           <TrainBullet id={trip[0]} size='small' /> from { stations[solution.origin].name } to { stations[solution.first_transfer_arrival].name }<br />
           <TrainBullet id={trip[1]} size='small' /> from { stations[solution.first_transfer_departure].name } to { stations[solution.second_transfer_arrival].name }<br />

@@ -193,22 +193,7 @@ const App = () => {
       <Segment basic className='app-wrapper' inverted={isDarkMode}>
         <Segment clearing basic className='header-wrapper' inverted={isDarkMode}>
           <Header floated='left'>
-            {isNight && "Late Night "}
-            {(!isNight && isWeekend) && "Weekend "}Subwaydle
-            {
-               isNight &&
-               <Popup
-               position='bottom center'
-                 trigger={
-                   <sup>[?]</sup>
-                 }
-               >
-               <Popup.Content>
-                 <p>Subwaydle now available in Dark Mode!</p>
-                 <p>Try solving this weekend's Subwaydle with late night routing patterns.</p>
-               </Popup.Content>
-               </Popup>
-             }
+            MBTAdle
           </Header>
           <Icon className='float-right' inverted={isDarkMode} name='cog' size='large' link onClick={handleSettingsOpen} />
           <Icon className='float-right' inverted={isDarkMode} name='chart bar' size='large' link onClick={handleStatsOpen} />
@@ -219,7 +204,7 @@ const App = () => {
           {
             isNotEnoughRoutes &&
             <Message negative floating attached='top'>
-              <Message.Header>Not enough trains for the trip</Message.Header>
+              <Message.Header>Not enough lines for the trip</Message.Header>
             </Message>
           }
           {

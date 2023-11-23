@@ -1,4 +1,39 @@
 {
+  "Red":{
+    "id":"Red",
+    "name":"RL",
+    "color": "#e12723",
+    "text_color": null,
+    "alternate_name": null
+  },
+  "Green":{
+    "id":"Green",
+    "name":"GL",
+    "color": "#028345",
+    "text_color": null,
+    "alternate_name": null
+  },
+  "Blue":{
+    "id":"Blue",
+    "name":"BL",
+    "color": "#0f4b91",
+    "text_color": null,
+    "alternate_name": null
+  },
+  "Silver":{
+    "id":"Silver",
+    "name":"SL",
+    "color": "#7b868d",
+    "text_color": null,
+    "alternate_name": null
+  },
+  "Orange":{
+    "id":"Orange",
+    "name":"OL",
+    "color": "#f08b22",
+    "text_color": null,
+    "alternate_name": null
+  },
   "1":{
     "id":"1",
     "name":"1",
@@ -134,7 +169,7 @@
   },
   "R":{
     "id":"R",
-    "name":"R",
+    "name":"RL",
     "color":"#fbbd08",
     "text_color":"#000000",
     "alternate_name":null

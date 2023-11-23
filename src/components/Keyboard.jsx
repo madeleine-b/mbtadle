@@ -50,7 +50,7 @@ const Keyboard = (props) => {
     <Grid centered columns={7} className='keyboard'>
       <Grid.Row>
         {
-          ["1", "2", "3", "4", "5", "6", "7"].map((routeId) => {
+          ["Red", "Green", "Blue", "Silver", "Orange"].map((routeId) => {
             return (
               <Key
                 id={routeId}
@@ -67,67 +67,12 @@ const Keyboard = (props) => {
           })
         }
       </Grid.Row>
-      <Grid.Row>
-        {
-          ["A", "B", "C", "D", "E", "F", "G"].map((routeId) => {
-            return (
-              <Key
-                id={routeId}
-                key={routeId}
-                isDarkMode={isDarkMode}
-                onClick={onChar}
-                disabled={noService.includes(routeId)}
-                isCorrect={correctRoutes.includes(routeId)}
-                isSimilar={similarRoutes.includes(routeId)}
-                isPresent={presentRoutes.includes(routeId)}
-                isAbsent={absentRoutes.includes(routeId)}
-              />
-            )
-          })
-        }
-        </Grid.Row>
-        <Grid.Row>
-        {
-          ["J", "L", "M", "N", "Q", "R", "W"].map((routeId) => {
-            return (
-              <Key
-                id={routeId}
-                key={routeId}
-                isDarkMode={isDarkMode}
-                onClick={onChar}
-                disabled={noService.includes(routeId)}
-                isCorrect={correctRoutes.includes(routeId)}
-                isSimilar={similarRoutes.includes(routeId)}
-                isPresent={presentRoutes.includes(routeId)}
-                isAbsent={absentRoutes.includes(routeId)}
-              />
-            )
-          })
-        }
-        </Grid.Row>
         <Grid.Row columns={6}>
           <Grid.Column className='key' stretched>
             <Button onClick={handleEnter} inverted={isDarkMode}>
               Enter
             </Button>
           </Grid.Column>
-        {
-          ["SI", "GS", "FS", "H"].map((routeId) => {
-            return (
-              <Key
-                id={routeId}
-                key={routeId}
-                isDarkMode={isDarkMode}
-                onClick={onChar}
-                disabled={noService.includes(routeId)}
-                isCorrect={correctRoutes.includes(routeId)}
-                isSimilar={similarRoutes.includes(routeId)}
-                isPresent={presentRoutes.includes(routeId)}
-                isAbsent={absentRoutes.includes(routeId)}
-              />
-            )
-          })
-        }
           <Grid.Column className='key' stretched>
             <Button onClick={handleDelete} inverted={isDarkMode}>
               Delete

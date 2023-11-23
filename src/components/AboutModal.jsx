@@ -11,9 +11,9 @@ const AboutModal = (props) => {
     <Modal closeIcon open={open} onClose={handleClose} size='tiny' className={isDarkMode ? 'about-modal dark' : 'about-modal'}>
       <Modal.Header>How to Play</Modal.Header>
       <Modal.Content scrolling>
-        <p>Guess the <strong>SUBWAYDLE</strong> in 6 tries.</p>
-        <p>Each guess must a be a <strong>valid subway trip involving 3 trains</strong> using available transfers between them.</p>
-        <p>You need to guess a specific set of three trains that can make the trip.</p>
+        <p>Guess the <strong>MBTAdle</strong> in 6 tries.</p>
+        <p>Each guess must a be a <strong>valid transit trip involving 3 trains and/or buses</strong> using available transfers between them.</p>
+        <p>You need to guess a specific set of three lines that can make the trip.</p>
 
         <Header as='h4'>Examples</Header>
         <Segment basic>
