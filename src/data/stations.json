@@ -1,4 +1,34 @@
 {
+  "Kendall/MIT": {
+    "name": "Kendall/MIT",
+    "longitude": 0,
+    "latitude": 0
+  },
+  "Park Street (G)": {
+    "name": "Park Street (G)",
+    "longitude": 0,
+    "latitude": 0
+  },
+  "Park Street (R)": {
+    "name": "Park Street (R)",
+    "longitude": 0,
+    "latitude": 0
+  },
+  "Government Center (G)": {
+    "name": "Government Center (G)",
+    "longitude": 0,
+    "latitude": 0
+  },
+  "Government Center (B)": {
+    "name": "Government Center (B)",
+    "longitude": 0,
+    "latitude": 0
+  },
+  "Maverick": {
+    "name": "Maverick",
+    "longitude": 0,
+    "latitude": 0
+  },
   "R01": {
     "name": "Astoria–Ditmars Blvd",
     "longitude": -73.912034,

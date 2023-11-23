@@ -1,11 +1,12 @@
 import weekdayAnswers from './../data/weekday/answers.json';
 import weekdaySolutions from './../data/weekday/solutions.json';
 import weekdayRoutings from './../data/weekday/routings.json';
+import mbtaAnswers from './../data/mbta/answers.json';
+import mbtaSolutions from './../data/mbta/solutions.json';
+import mbtaRoutings from './../data/mbta/routings.json';
 import transfers from './../data/transfers.json';
 
-const ROUTES_WITH_NO_WEEKEND_SERVICE = ['B', 'W'];
-const ROUTES_WITH_NO_NIGHT_SERVICE = ['B', 'C', 'W', 'GS'];
-const GAME_EPOCH = new Date('November 22, 2023 00:00:00').valueOf();
+const GAME_EPOCH = new Date('November 23, 2023 00:00:00').valueOf();
 export const NIGHT_GAMES = [350, 351];
 const DEKALB_AV_FLATBUSH_STOP = "R30";
 
@@ -75,15 +76,14 @@ const retrieveSubrouting = (train, routings, begin, end) => {
   return routings[trainLookup].slice(endIndex, beginIndex + 1);
 }
 
-export const isWeekend = false;//[0, 6].includes(today.getDay());
-
 export const routesWithNoService = () => {
   return [];
 }
 
 export const isValidGuess = (guess) => {
   const flattenedGuess = guess.join('-');
-  return !!weekdaySolutions[flattenedGuess];
+  console.log(flattenedGuess);
+  return !!mbtaSolutions[flattenedGuess];
 }
 
 export const todayGameIndex = () => {
@@ -104,12 +104,12 @@ const daysBetween = (startDate, endDate) => {
 export const isNight = NIGHT_GAMES.includes(todayGameIndex());
 
 const todaysRoutings = () => {
-  return weekdayRoutings;
+  return mbtaRoutings;
 }
 
 export const todaysTrip = () => {
   const index = todayGameIndex();
-  return weekdayAnswers[index % weekdayAnswers.length];
+  return mbtaAnswers[index % mbtaAnswers.length];
 }
 
 export const flattenedTodaysTrip = () => {
@@ -117,7 +117,7 @@ export const flattenedTodaysTrip = () => {
 }
 
 export const todaysSolution = () => {
-  return weekdaySolutions[todaysTrip().join("-")];
+  return mbtaSolutions[todaysTrip().join("-")];
 }
 
 export const isWinningGuess = (guess) => {

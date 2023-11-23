@@ -1,33 +1,33 @@
 {
-  "Red":{
-    "id":"Red",
+  "RL":{
+    "id":"RL",
     "name":"RL",
     "color": "#e12723",
     "text_color": null,
     "alternate_name": null
   },
-  "Green":{
-    "id":"Green",
+  "GL":{
+    "id":"GL",
     "name":"GL",
     "color": "#028345",
     "text_color": null,
     "alternate_name": null
   },
-  "Blue":{
-    "id":"Blue",
+  "BL":{
+    "id":"BL",
     "name":"BL",
     "color": "#0f4b91",
     "text_color": null,
     "alternate_name": null
   },
-  "Silver":{
-    "id":"Silver",
+ "Silver":{
+    "id":"SL",
     "name":"SL",
     "color": "#7b868d",
     "text_color": null,
     "alternate_name": null
   },
-  "Orange":{
+  "OL":{
     "id":"Orange",
     "name":"OL",
     "color": "#f08b22",

@@ -20,14 +20,14 @@ const Keyboard = (props) => {
         onDelete();
       } else {
         const key = e.key.toUpperCase()
-        if (key.length === 1 && routes[key]) {
-          onChar(key);
-        } else if (key === 'S') {
-          onChar('GS');
-        } else if (key === 'K') {
-          onChar('FS');
-        } else if (key === 'I') {
-          onChar('SI');
+        if (key === 'G') {
+          onChar('GL');
+        } else if (key === 'B') {
+          onChar('BL');
+        } else if (key === 'R') {
+          onChar('RL');
+        } else if (key === 'O') {
+          onChar('OL');
         }
       }
     }
@@ -50,7 +50,7 @@ const Keyboard = (props) => {
     <Grid centered columns={7} className='keyboard'>
       <Grid.Row>
         {
-          ["Red", "Green", "Blue", "Silver", "Orange"].map((routeId) => {
+          ["RL", "GL", "BL", "OL"].map((routeId) => {
             return (
               <Key
                 id={routeId}

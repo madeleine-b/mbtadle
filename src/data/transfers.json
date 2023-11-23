@@ -1,4 +1,16 @@
 {
+  "Park Street (G)": [
+    "Park Street (R)"
+  ],
+  "Park Street (R)": [
+    "Park Street (G)"
+  ],
+  "Government Center (G)": [
+    "Government Center (B)"
+  ],
+  "Government Center (B)": [
+    "Government Center (G)"
+  ],
   "112": [
     "A09"
   ],

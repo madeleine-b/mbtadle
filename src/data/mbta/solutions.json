@@ -1,0 +1,10 @@
+{
+  "RL-GL-BL": {
+    "origin": "Kendall/MIT",
+    "first_transfer_arrival": "Park Street (R)",
+    "first_transfer_departure": "Park Street (G)",
+    "second_transfer_arrival": "Government Center (G)",
+    "second_transfer_departure": "Government Center (B)",
+    "destination": "Maverick"
+  }
+}
