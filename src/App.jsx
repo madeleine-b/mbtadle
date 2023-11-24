@@ -9,8 +9,6 @@ import StatsModal from './components/StatsModal';
 import SettingsModal from './components/SettingsModal';
 
 import {
-  isWeekend,
-  routesWithNoService,
   isValidGuess,
   isWinningGuess,
   updateGuessStatuses,
@@ -83,9 +81,7 @@ const App = () => {
 
   const onChar = (routeId) => {
     if (!isStatsOpen && !isGameWon && currentGuess.length < 3 && guesses.length < ATTEMPTS) {
-      if (!routesWithNoService().includes(routeId)) {
-        setCurrentGuess([...currentGuess, routeId]);
-      }
+      setCurrentGuess([...currentGuess, routeId]);
     }
   }
 
@@ -222,7 +218,6 @@ const App = () => {
         </Segment>
         <Segment basic>
           <Keyboard
-            noService={routesWithNoService()}
             isDarkMode={isDarkMode}
             onChar={onChar}
             onDelete={onDelete}

@@ -4,7 +4,6 @@ import mbtaRoutings from './../data/mbta/routings.json';
 import transfers from './../data/transfers.json';
 
 const GAME_EPOCH = new Date('November 23, 2023 00:00:00').valueOf();
-const DEKALB_AV_FLATBUSH_STOP = "R30";
 
 const today = new Date();
 const now = Date.now();
@@ -18,10 +17,6 @@ const isSimilarToAnswerTrain = (guess, index) => {
 
 
   return false;
-}
-
-export const routesWithNoService = () => {
-  return [];
 }
 
 export const isValidGuess = (guess) => {

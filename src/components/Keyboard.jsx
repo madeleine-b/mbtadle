@@ -7,7 +7,7 @@ import './Keyboard.scss';
 
 const Keyboard = (props) => {
   const {
-    noService, isDarkMode,
+    isDarkMode,
     onChar, onDelete, onEnter,
     correctRoutes, similarRoutes, presentRoutes, absentRoutes
   } = props;
@@ -63,7 +63,7 @@ const Keyboard = (props) => {
                 key={routeId}
                 isDarkMode={isDarkMode}
                 onClick={onChar}
-                disabled={noService.includes(routeId)}
+                disabled={false}
                 isCorrect={correctRoutes.includes(routeId)}
                 isSimilar={similarRoutes.includes(routeId)}
                 isPresent={presentRoutes.includes(routeId)}
