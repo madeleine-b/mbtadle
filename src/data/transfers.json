@@ -1,82 +1,66 @@
 {
+  "Park Street (R)": [
+    "Park Street (GL-D)",
+    "Park Street (GL-C)",
+    "Park Street (GL-B)",
+    "Park Street (GL-E)"
+  ],
+  "Park Street (GL-C)": [
+    "Park Street (R)"
+  ],
+  "Park Street (GL-B)": [
+    "Park Street (R)"
+  ],
+  "Park Street (GL-D)": [
+    "Park Street (R)"
+  ],
   "Park Street (GL-E)": [
     "Park Street (R)"
   ],
-  "Park Street (R)": [
-    "Park Street (GL-E)"
-  ],
-  "Park Street (GL-D)": [
-    "Park Street (R)"
-  ],
-  "Park Street (R)": [
-    "Park Street (GL-D)"
-  ],
-  "Park Street (GL-C)": [
-    "Park Street (R)"
-  ],
-  "Park Street (R)": [
-    "Park Street (GL-C)"
-  ],
-  "Park Street (GL-B)": [
-    "Park Street (R)"
-  ],
-  "Park Street (R)": [
-    "Park Street (GL-B)"
-  ],
-
-  "Downtown Crossing (GL-E)": [
-    "Park Street (R)"
-  ],
-  "Park Street (R)": [
-    "Park Street (GL-E)"
-  ],
-  "Park Street (GL-D)": [
-    "Park Street (R)"
-  ],
-  "Park Street (R)": [
-    "Park Street (GL-D)"
-  ],
-  "Park Street (GL-C)": [
-    "Park Street (R)"
-  ],
-  "Park Street (R)": [
-    "Park Street (GL-C)"
-  ],
-  "Park Street (GL-B)": [
-    "Park Street (R)"
-  ],
-  "Park Street (R)": [
-    "Park Street (GL-B)"
-  ],
-
-
-  "Government Center (G)": [
+  "Government Center (GL-C)": [
     "Government Center (B)"
   ],
   "Government Center (B)": [
-    "Government Center (G)"
+    "Government Center (GL-C)",
+    "Government Center (GL-E)",
+    "Government Center (GL-B)",
+    "Government Center (GL-D)"
   ],
-  "North Station (G)": [
+   "Government Center (GL-E)": [
+    "Government Center (B)"
+  ],
+   "Government Center (GL-D)": [
+    "Government Center (B)"
+  ],
+   "Government Center (GL-B)": [
+    "Government Center (B)"
+  ],
+  "North Station (GL-D)": [
+    "North Station (O)"
+  ],
+  "North Station (GL-E)": [
     "North Station (O)"
   ],
   "North Station (O)": [
-    "North Station (G)"
+    "North Station (GL-D)",
+    "North Station (GL-E)"
   ],
-  "Haymarket (G)": [
-    "Haymarket(O)"
+  "Haymarket (GL-E)": [
+    "Haymarket (O)"
+  ],
+  "Haymarket (GL-D)": [
+    "Haymarket (O)"
   ],
   "Haymarket (O)": [
-    "Haymarket (G)"
+    "Haymarket (GL-E)",
+    "Haymarket (GL-D)"
   ],
-
-
-
 
   "State Street (B)": [
     "State Street (O)"
   ],
   "State Street (O)": [
-    "State Street (G)"
+    "State Street (B)"
   ],
   "Downtown Crossing (O)": [
     "Downtown Crossing (R)"

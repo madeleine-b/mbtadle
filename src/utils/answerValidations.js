@@ -13,64 +13,11 @@ const isSimilarToAnswerTrain = (guess, index) => {
   let begin;
   let end;
   const answer = todaysTrip()[index];
-  const solution = todaysSolution();
-  const routings = todaysRoutings();
-  switch (index) {
-    case 0:
-      begin = solution.origin;
-      end = solution.first_transfer_arrival;
-      break;
-    case 1:
-      begin = solution.first_transfer_departure;
-      end = solution.second_transfer_arrival;
-      break;
-    default:
-      begin = solution.second_transfer_departure;
-      end = solution.destination;
-  }
+  const solution = todaysTripInLines();
+  // FIXME
 
-  const guessSubrouting = retrieveSubrouting(guess, routings, begin, end);
-
-  if (!guessSubrouting) {
-    return false;
-  }
-
-  const answerSubrouting = retrieveSubrouting(answer, routings, begin, end);
-
-  const guessSubroutingInner = guessSubrouting.slice(1, guessSubrouting.length).filter(s => s !== DEKALB_AV_FLATBUSH_STOP);
-  const answerSubroutingInner = answerSubrouting.slice(1, answerSubrouting.length).filter(s => s !== DEKALB_AV_FLATBUSH_STOP);
-
-  if (guessSubroutingInner.every(s => answerSubroutingInner.includes(s)) || answerSubroutingInner.every(s => guessSubroutingInner.includes(s))) {
-    return (guessSubrouting.includes(begin) && answerSubrouting.includes(begin)) || (guessSubrouting.includes(end) && answerSubrouting.includes(end));
-  }
 
   return false;
-}
-
-const retrieveSubrouting = (train, routings, begin, end) => {
-  return [];
-  let trainLookup;
-  if (train === 'A') {
-    if (routings['A1'].includes(begin) && routings['A1'].includes(end)) {
-      trainLookup = 'A1';
-    } else {
-      trainLookup = 'A2';
-    }
-  } else {
-    trainLookup = train;
-  }
-
-  const beginIndex = [begin, transfers[begin]].flat().filter(n => n).map(s => routings[trainLookup].indexOf(s)).find(i => i > -1);
-  const endIndex = [end, transfers[end]].flat().filter(n => n).map(s => routings[trainLookup].indexOf(s)).find(i => i > -1);
-
-  if (beginIndex == null || endIndex == null) {
-    return;
-  }
-
-  if (beginIndex < endIndex) {
-    return routings[trainLookup].slice(beginIndex, endIndex + 1);
-  }
-  return routings[trainLookup].slice(endIndex, beginIndex + 1);
 }
 
 export const routesWithNoService = () => {
@@ -183,7 +130,7 @@ export const checkGuessStatuses = (guess) => {
   const remainingRoutes = [];
   const remainingGuessPositions = [];
 
-  todaysSolution()["solution"].split("-").forEach((routeId, index) => {
+  todaysTripInLines().forEach((routeId, index) => {
     if (guess[index] === routeId) {
       results[index] = 'correct';
     } else {

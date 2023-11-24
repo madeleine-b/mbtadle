@@ -54,8 +54,8 @@
         "longitude": 0,
         "latitude": 0
     },
-    "State Street (B)": {
-        "name": "State Street (B)",
+    "State Street (O)": {
+        "name": "State Street (O)",
         "longitude": 0,
         "latitude": 0
     },
@@ -155,47 +155,47 @@
         "latitude": 0
     },
     "Copley (GL-E)": {
-        "name": "Copley",
+        "name": "Copley (GL-E)",
         "longitude": 0,
         "latitude": 0
     },
     "Arlington (GL-E)": {
-        "name": "Arlington",
+        "name": "Arlington (GL-E)",
         "longitude": 0,
         "latitude": 0
     },
     "Boylston (GL-E)": {
-        "name": "Boylston",
+        "name": "Boylston (GL-E)",
         "longitude": 0,
         "latitude": 0
     },
     "Park Street (GL-E)": {
-        "name": "Park Street",
+        "name": "Park Street (GL-E)",
         "longitude": 0,
         "latitude": 0
     },
-    "Government Center (G)": {
-        "name": "Government Center (G)",
+    "Government Center (GL-E)": {
+        "name": "Government Center (GL-E)",
         "longitude": 0,
         "latitude": 0
     },
-    "Haymarket (G)": {
-        "name": "Haymarket (G)",
+    "Haymarket (GL-E)": {
+        "name": "Haymarket (GL-E)",
         "longitude": 0,
         "latitude": 0
     },
-    "North Station (G)": {
-        "name": "North Station (G)",
+    "North Station (GL-E)": {
+        "name": "North Station (GL-E)",
         "longitude": 0,
         "latitude": 0
     },
     "Science Park/West End (GL-E)": {
-        "name": "Science Park/West End",
+        "name": "Science Park/West End (GL-E)",
         "longitude": 0,
         "latitude": 0
     },
     "Lechmere (GL-E)": {
-        "name": "Lechmere",
+        "name": "Lechmere (GL-E)",
         "longitude": 0,
         "latitude": 0
     },
@@ -290,42 +290,47 @@
         "latitude": 0
     },
     "Kenmore (GL-D)": {
-        "name": "Kenmore",
+        "name": "Kenmore (GL-D)",
         "longitude": 0,
         "latitude": 0
     },
     "Hynes Convention Center (GL-D)": {
-        "name": "Hynes Convention Center",
+        "name": "Hynes Convention Center (GL-D)",
         "longitude": 0,
         "latitude": 0
     },
     "Copley (GL-D)": {
-        "name": "Copley",
+        "name": "Copley (GL-D)",
         "longitude": 0,
         "latitude": 0
     },
     "Arlington (GL-D)": {
-        "name": "Arlington",
+        "name": "Arlington (GL-D)",
         "longitude": 0,
         "latitude": 0
     },
     "Boylston (GL-D)": {
-        "name": "Boylston",
+        "name": "Boylston (GL-D)",
         "longitude": 0,
         "latitude": 0
     },
     "Park Street (GL-D)": {
-        "name": "Park Street",
+        "name": "Park Street (GL-D)",
         "longitude": 0,
         "latitude": 0
     },
     "Government Center (GL-D)": {
-        "name": "Government Center",
+        "name": "Government Center (GL-D)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Haymarket (GL-D)": {
+        "name": "Haymarket (GL-D)",
         "longitude": 0,
         "latitude": 0
     },
     "Lechmere (GL-D)": {
-        "name": "Lechmere",
+        "name": "Lechmere (GL-D)",
         "longitude": 0,
         "latitude": 0
     },
@@ -335,7 +340,12 @@
         "latitude": 0
     },
     "Science Park/West End (GL-D)": {
-        "name": "Science Park/West End",
+        "name": "Science Park/West End (GL-D)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "North Station (GL-D)": {
+        "name": "North Station (GL-D)",
         "longitude": 0,
         "latitude": 0
     },
@@ -430,37 +440,37 @@
         "latitude": 0
     },
     "Kenmore (GL-B)": {
-        "name": "Kenmore",
+        "name": "Kenmore (GL-B)",
         "longitude": 0,
         "latitude": 0
     },
     "Hynes Convention Center (GL-B)": {
-        "name": "Hynes Convention Center",
+        "name": "Hynes Convention Center (GL-B)",
         "longitude": 0,
         "latitude": 0
     },
     "Copley (GL-B)": {
-        "name": "Copley",
+        "name": "Copley (GL-B)",
         "longitude": 0,
         "latitude": 0
     },
     "Arlington (GL-B)": {
-        "name": "Arlington",
+        "name": "Arlington (GL-B)",
         "longitude": 0,
         "latitude": 0
     },
     "Boylston (GL-B)": {
-        "name": "Boylston",
+        "name": "Boylston (GL-B)",
         "longitude": 0,
         "latitude": 0
     },
     "Park Street (GL-B)": {
-        "name": "Park Street",
+        "name": "Park Street (GL-B)",
         "longitude": 0,
         "latitude": 0
     },
     "Government Center (GL-B)": {
-        "name": "Government Center",
+        "name": "Government Center (GL-B)",
         "longitude": 0,
         "latitude": 0
     },
@@ -530,37 +540,37 @@
         "latitude": 0
     },
     "Kenmore (GL-C)": {
-        "name": "Kenmore",
+        "name": "Kenmore (GL-C)",
         "longitude": 0,
         "latitude": 0
     },
     "Hynes Convention Center (GL-C)": {
-        "name": "Hynes Convention Center",
+        "name": "Hynes Convention Center (GL-C)",
         "longitude": 0,
         "latitude": 0
     },
     "Copley (GL-C)": {
-        "name": "Copley",
+        "name": "Copley (GL-C)",
         "longitude": 0,
         "latitude": 0
     },
     "Arlington (GL-C)": {
-        "name": "Arlington",
+        "name": "Arlington (GL-C)",
         "longitude": 0,
         "latitude": 0
     },
     "Boylston (GL-C)": {
-        "name": "Boylston",
+        "name": "Boylston (GL-C)",
         "longitude": 0,
         "latitude": 0
     },
     "Park Street (GL-C)": {
-        "name": "Park Street",
+        "name": "Park Street (GL-C)",
         "longitude": 0,
         "latitude": 0
     },
     "Government Center (GL-C)": {
-        "name": "Government Center",
+        "name": "Government Center (GL-C)",
         "longitude": 0,
         "latitude": 0
     },
@@ -571,6 +581,11 @@
     },
     "Government Center (B)": {
         "name": "Government Center (B)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "State Street (B)": {
+        "name": "State Street (B)",
         "longitude": 0,
         "latitude": 0
     },
