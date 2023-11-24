@@ -9,7 +9,6 @@ import StatsModal from './components/StatsModal';
 import SettingsModal from './components/SettingsModal';
 
 import {
-  isNight,
   isWeekend,
   routesWithNoService,
   isValidGuess,
@@ -17,8 +16,7 @@ import {
   updateGuessStatuses,
   flattenedTodaysTrip,
   todaysSolution,
-  todayGameIndex,
-  NIGHT_GAMES,
+  todayGameIndex
 } from './utils/answerValidations';
 
 import {
@@ -77,6 +75,7 @@ const App = () => {
   const [settings, setSettings] = useState(() => loadSettings());
 
   const solution = todaysSolution();
+  console.log(solution);
 
   useEffect(() => {
     saveGameStateToLocalStorage({ guesses, answer: flattenedTodaysTrip() })
@@ -186,7 +185,7 @@ const App = () => {
     setIsAboutOpen(true);
   }
 
-  const isDarkMode = (NIGHT_GAMES.includes(todayGameIndex())) || (todayGameIndex() > Math.max(...NIGHT_GAMES) && settings.display.darkMode);
+  const isDarkMode = settings.display.darkMode;
 
   return (
     <div className={"outer-app-wrapper " + (isDarkMode ? 'dark' : '')}>

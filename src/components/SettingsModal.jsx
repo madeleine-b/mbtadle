@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Modal, Header, Grid, Checkbox, Icon, Popup } from 'semantic-ui-react';
 import { saveSettings, loadSettings, defaultSettings } from '../utils/settings';
-import { todayGameIndex, NIGHT_GAMES } from '../utils/answerValidations';
+import { todayGameIndex } from '../utils/answerValidations';
 
 import './SettingsModal.scss'
 
@@ -54,7 +54,6 @@ const SettingsModal = (props, state) => {
             </Grid.Column>
           </Grid.Row>
           {
-            todayGameIndex() > Math.max(...NIGHT_GAMES) &&
             <Grid.Row>
               <Grid.Column className='fourteen wide'>
                 Dark mode

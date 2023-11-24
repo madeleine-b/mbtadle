@@ -20,8 +20,9 @@ const SolutionModal = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalHidden, setIsModalHidden] = useState(false);
   const modal = useRef(null);
-  const trip = todaysTrip();
+  const trip = todaysSolution()["solution"].split("-");
   const solution = todaysSolution();
+
   const title = isGameWon ? "Yay! You completed today's trip!" : "Aww, looks like you got lost on the T...";
   const isIos = /iP(ad|od|hone)/i.test(window.navigator.userAgent) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 2 && /MacIntel/.test(navigator.platform));
 

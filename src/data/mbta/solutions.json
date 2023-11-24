@@ -1,9 +1,10 @@
 {
-  "RL-GL-BL": {
+  "Kendall/MIT-Park Street (R)-Park Street (GL-C)-Government Center (GL-C)-Government Center (B)-Maverick": {
+    "solution": "RL-GLC-BL",
     "origin": "Kendall/MIT",
     "first_transfer_arrival": "Park Street (R)",
-    "first_transfer_departure": "Park Street (G)",
-    "second_transfer_arrival": "Government Center (G)",
+    "first_transfer_departure": "Park Street (GL-C)",
+    "second_transfer_arrival": "Government Center (GL-C)",
     "second_transfer_departure": "Government Center (B)",
     "destination": "Maverick"
   }

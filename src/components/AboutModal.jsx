@@ -26,107 +26,24 @@ const AboutModal = (props) => {
                       <Icon name="check" fitted />
                     </Label>
                   }
-                  <TrainBullet id='A' size='medium' />
+                  <TrainBullet id='GLC' size='medium' />
                 </Segment>
               </Grid.Column>
               <Grid.Column>
                 <Segment placeholder>
-                  <TrainBullet id='N' size='medium' />
+                  <TrainBullet id='RL' size='medium' />
                 </Segment>
               </Grid.Column>
               <Grid.Column>
                 <Segment placeholder>
-                  <TrainBullet id='7' size='medium' />
+                  <TrainBullet id='BL' size='medium' />
                 </Segment>
               </Grid.Column>
             </Grid.Row>
           </Grid>
         </Segment>
-        <p>The <TrainBullet id='A' size='small' /> train is in the correct spot of the trip.</p>
+        <p>The <TrainBullet id='BL' size='small' /> train is in the correct spot of the trip.</p>
 
-        <Segment basic>
-          <Grid centered columns={4} className={isDarkMode ? 'game-grid dark' : 'game-grid'}>
-            <Grid.Row>
-              <Grid.Column>
-                <Segment placeholder>
-                  <TrainBullet id='GS' size='medium' />
-                </Segment>
-              </Grid.Column>
-              <Grid.Column>
-                <Segment placeholder className='similar'>
-                  {settings.display.showAnswerStatusBadges &&
-                    <Label as='a' floating circular size='tiny'>
-                      <Icon name="sync alternate" fitted />
-                    </Label>
-                  }
-                  <TrainBullet id='1' size='medium' />
-                </Segment>
-              </Grid.Column>
-              <Grid.Column>
-                <Segment placeholder>
-                  <TrainBullet id='L' size='medium' />
-                </Segment>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Segment>
-        <p>Another train that shares the same routing as the <TrainBullet id='1' size='small' /> train is in that spot of the trip.</p>
-
-        <Segment basic>
-          <Grid centered columns={4} className={isDarkMode ? 'game-grid dark' : 'game-grid'}>
-            <Grid.Row>
-              <Grid.Column>
-                <Segment placeholder>
-                  <TrainBullet id='J' size='medium' />
-                </Segment>
-              </Grid.Column>
-              <Grid.Column>
-                <Segment placeholder className='present'>
-                  {settings.display.showAnswerStatusBadges &&
-                    <Label as='a' floating circular size='tiny'>
-                      <Icon name="arrows alternate horizontal" fitted />
-                    </Label>
-                  }
-                  <TrainBullet id='5' size='medium' />
-                </Segment>
-              </Grid.Column>
-              <Grid.Column>
-                <Segment placeholder>
-                  <TrainBullet id='2' size='medium' />
-                </Segment>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Segment>
-        <p>The <TrainBullet id='5' size='small' /> train is part of the trip, but in the wrong spot.</p>
-
-        <Segment basic>
-          <Grid centered columns={4} className={isDarkMode ? 'game-grid dark' : 'game-grid'}>
-            <Grid.Row>
-              <Grid.Column>
-                <Segment placeholder>
-                  <TrainBullet id='F' size='medium' />
-                </Segment>
-              </Grid.Column>
-              <Grid.Column>
-                <Segment placeholder>
-                  <TrainBullet id='3' size='medium' />
-                </Segment>
-              </Grid.Column>
-              <Grid.Column>
-                <Segment placeholder className='absent'>
-                  {settings.display.showAnswerStatusBadges &&
-                    <Label as='a' floating circular size='tiny'>
-                      <Icon name="x" fitted />
-                    </Label>
-                  }
-                  <TrainBullet id='4' size='medium' />
-                </Segment>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Segment>
-        <p>The <TrainBullet id='4' size='small' /> train is not part of the trip in any spot.</p>
 
         <p><strong>Multiple routings may be possible</strong> to make the trip, but your goal is to
         find <strong>the one routing</strong> that matches the puzzle of the day. The solution <strong>may or may not</strong> be the fastest or efficient routing. It should also be noted that in the New York City Subway system, there are <strong>multiple stations with the same name</strong>.</p>
@@ -141,10 +58,6 @@ const AboutModal = (props) => {
 
         <Header as='h4'>Tips</Header>
         <p>Input using keyboard is supported.</p>
-        <p>Use <strong>I</strong> for <TrainBullet id='SI' size='small' />.</p>
-        <p>Use <strong>S</strong> for <TrainBullet id='GS' size='small' />.</p>
-        <p>Use <strong>K</strong> for <TrainBullet id='FS' size='small' />.</p>
-        <p>Use <strong>H</strong> for <TrainBullet id='H' size='small' />.</p>
 
         <Header as='h4'>About</Header>
 
@@ -156,7 +69,7 @@ const AboutModal = (props) => {
 
         <p>Created by <a href="https://www.sunny.ng" target="_blank">Sunny Ng</a><a href='https://twitter.com/_blahblahblah' target='_blank'><Icon name='twitter' link /></a></p>
         <p><a href="https://github.com/blahblahblah-/subwaydle" target="_blank">Source code</a>.</p>
-        <p>Check out my other NYC Subway related projects: <a href="https://www.theweekendest.com" target="_blank">The Weekendest</a> and <a href="https://www.goodservice.io" target="_blank">goodservice.io</a>.</p>
+        
       </Modal.Content>
     </Modal>
   );

@@ -1,13 +1,9 @@
-import weekdayAnswers from './../data/weekday/answers.json';
-import weekdaySolutions from './../data/weekday/solutions.json';
-import weekdayRoutings from './../data/weekday/routings.json';
 import mbtaAnswers from './../data/mbta/answers.json';
 import mbtaSolutions from './../data/mbta/solutions.json';
 import mbtaRoutings from './../data/mbta/routings.json';
 import transfers from './../data/transfers.json';
 
 const GAME_EPOCH = new Date('November 23, 2023 00:00:00').valueOf();
-export const NIGHT_GAMES = [350, 351];
 const DEKALB_AV_FLATBUSH_STOP = "R30";
 
 const today = new Date();
@@ -52,6 +48,7 @@ const isSimilarToAnswerTrain = (guess, index) => {
 }
 
 const retrieveSubrouting = (train, routings, begin, end) => {
+  return [];
   let trainLookup;
   if (train === 'A') {
     if (routings['A1'].includes(begin) && routings['A1'].includes(end)) {
@@ -82,8 +79,8 @@ export const routesWithNoService = () => {
 
 export const isValidGuess = (guess) => {
   const flattenedGuess = guess.join('-');
-  console.log(flattenedGuess);
-  return !!mbtaSolutions[flattenedGuess];
+  const routesThatExist = Object.values(mbtaSolutions).map((sol) => { return sol['solution']; });
+  return routesThatExist.includes(flattenedGuess);
 }
 
 export const todayGameIndex = () => {
@@ -101,8 +98,6 @@ const daysBetween = (startDate, endDate) => {
   return (treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay;
 }
 
-export const isNight = NIGHT_GAMES.includes(todayGameIndex());
-
 const todaysRoutings = () => {
   return mbtaRoutings;
 }
@@ -110,6 +105,10 @@ const todaysRoutings = () => {
 export const todaysTrip = () => {
   const index = todayGameIndex();
   return mbtaAnswers[index % mbtaAnswers.length];
+}
+
+const todaysTripInLines = () => {
+  return todaysSolution()["solution"].split("-");
 }
 
 export const flattenedTodaysTrip = () => {
@@ -121,7 +120,7 @@ export const todaysSolution = () => {
 }
 
 export const isWinningGuess = (guess) => {
-  return guess.join('-') === todaysTrip().join('-');
+  return guess.join('-') === todaysSolution()["solution"];
 }
 
 export const updateGuessStatuses = (guesses, setCorrectRoutes, setSimilarRoutes, setPresentRoutes, setAbsentRoutes, setSimilarRoutesIndexes, correctRoutes, similarRoutes, presentRoutes, absentRoutes, similarRoutesIndexes) => {
@@ -135,7 +134,7 @@ export const updateGuessStatuses = (guesses, setCorrectRoutes, setSimilarRoutes,
     const remainingRoutes = [];
     const remainingGuessPositions = [];
 
-    todaysTrip().forEach((routeId, index) => {
+    todaysTripInLines().forEach((routeId, index) => {
       if (guess[index] === routeId) {
         correct.push(routeId);
         Object.keys(similarIndexes).forEach((r) => {
@@ -184,7 +183,7 @@ export const checkGuessStatuses = (guess) => {
   const remainingRoutes = [];
   const remainingGuessPositions = [];
 
-  todaysTrip().forEach((routeId, index) => {
+  todaysSolution()["solution"].split("-").forEach((routeId, index) => {
     if (guess[index] === routeId) {
       results[index] = 'correct';
     } else {
