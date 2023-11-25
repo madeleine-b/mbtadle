@@ -141,11 +141,11 @@ const AboutModal = (props) => {
 
         <Header as='h4'>About</Header>
 
-        <p>The original <a href="https://www.subwaydle.com/" target="_blank">NYC Subwaydle</a>.</p>
+        <p>Boston version of the original <a href="https://www.subwaydle.com/" target="_blank">NYC Subwaydle</a>, created by <a href="https://www.sunny.ng" target="_blank">Sunny Ng</a><a href='https://twitter.com/_blahblahblah' target='_blank'><Icon name='twitter' link /></a>.</p>
 
         <p>Subwaydles around the world: <a href="https://hk.subwaydle.com" target="_blank">Hong Kong</a>, <a href="https://london.subwaydle.com" target="_blank">London</a>.</p>
 
-        <p>Created by Madeleine Barowsky, with deepest thanks to <a href="https://www.sunny.ng" target="_blank">Sunny Ng</a><a href='https://twitter.com/_blahblahblah' target='_blank'><Icon name='twitter' link /></a> for building the original.</p>
+        <p>MBTAdle by Madeleine Barowsky </p>
         <p><a href="https://github.com/madeleine-b/mbtadle" target="_blank">Source code</a>.</p>
 
       </Modal.Content>

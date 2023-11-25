@@ -1,0 +1,777 @@
+{
+    "Forest Hills": {
+        "name": "Forest Hills",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Green Street": {
+        "name": "Green Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Stony Brook": {
+        "name": "Stony Brook",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Jackson Square": {
+        "name": "Jackson Square",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Roxbury Crossing": {
+        "name": "Roxbury Crossing",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Ruggles": {
+        "name": "Ruggles",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Massachusetts Avenue": {
+        "name": "Massachusetts Avenue",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Back Bay": {
+        "name": "Back Bay",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Tufts Medical Center": {
+        "name": "Tufts Medical Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Chinatown": {
+        "name": "Chinatown",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Downtown Crossing (O)": {
+        "name": "Downtown Crossing (O)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "State Street (O)": {
+        "name": "State Street (O)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Haymarket (O)": {
+        "name": "Haymarket (O)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "North Station (O)": {
+        "name": "North Station (O)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Community College": {
+        "name": "Community College",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Sullivan Square": {
+        "name": "Sullivan Square",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Assembly": {
+        "name": "Assembly",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Wellington": {
+        "name": "Wellington",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Malden Center": {
+        "name": "Malden Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Oak Grove": {
+        "name": "Oak Grove",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Heath Street": {
+        "name": "Heath Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Back of the Hill": {
+        "name": "Back of the Hill",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Riverway": {
+        "name": "Riverway",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Mission Park": {
+        "name": "Mission Park",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Fenwood Road": {
+        "name": "Fenwood Road",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Brigham Circle": {
+        "name": "Brigham Circle",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Longwood Medical Area": {
+        "name": "Longwood Medical Area",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Museum of Fine Arts": {
+        "name": "Museum of Fine Arts",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Northeastern University": {
+        "name": "Northeastern University",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Symphony": {
+        "name": "Symphony",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Prudential": {
+        "name": "Prudential",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Copley (GL-E)": {
+        "name": "Copley",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Arlington (GL-E)": {
+        "name": "Arlington",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Boylston (GL-E)": {
+        "name": "Boylston",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Park Street (GL-E)": {
+        "name": "Park Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Government Center (GL-E)": {
+        "name": "Government Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Haymarket (GL-E)": {
+        "name": "Haymarket",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "North Station (GL-E)": {
+        "name": "North Station",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Science Park/West End (GL-E)": {
+        "name": "Science Park/West End",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Lechmere (GL-E)": {
+        "name": "Lechmere",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Gilman Square": {
+        "name": "Gilman Square",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "East Somerville": {
+        "name": "East Somerville",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Magoun Square": {
+        "name": "Magoun Square",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Ball Square": {
+        "name": "Ball Square",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Medford/Tufts": {
+        "name": "Medford/Tufts",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Riverside": {
+        "name": "Riverside",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Woodland": {
+        "name": "Woodland",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Waban": {
+        "name": "Waban",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Eliot": {
+        "name": "Eliot",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Newton Highlands": {
+        "name": "Newton Highlands",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Newton Centre": {
+        "name": "Newton Centre",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Chestnut Hill": {
+        "name": "Chestnut Hill",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Reservoir": {
+        "name": "Reservoir",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Beaconsfield": {
+        "name": "Beaconsfield",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Brookline Hills": {
+        "name": "Brookline Hills",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Brookline Village": {
+        "name": "Brookline Village",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Longwood": {
+        "name": "Longwood",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Fenway": {
+        "name": "Fenway",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Kenmore (GL-D)": {
+        "name": "Kenmore",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Hynes Convention Center (GL-D)": {
+        "name": "Hynes Convention Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Copley (GL-D)": {
+        "name": "Copley",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Arlington (GL-D)": {
+        "name": "Arlington",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Boylston (GL-D)": {
+        "name": "Boylston",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Park Street (GL-D)": {
+        "name": "Park Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Government Center (GL-D)": {
+        "name": "Government Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Haymarket (GL-D)": {
+        "name": "Haymarket",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "North Station (GL-D)": {
+        "name": "North Station",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Science Park/West End (GL-D)": {
+        "name": "Science Park/West End",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Lechmere (GL-D)": {
+        "name": "Lechmere",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Union Square": {
+        "name": "Union Square",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Boston College": {
+        "name": "Boston College",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "South Street": {
+        "name": "South Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Chestnut Hill Avenue": {
+        "name": "Chestnut Hill Avenue",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Chiswick Road": {
+        "name": "Chiswick Road",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Sutherland Road": {
+        "name": "Sutherland Road",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Washington Street": {
+        "name": "Washington Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Warren Street": {
+        "name": "Warren Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Allston Street": {
+        "name": "Allston Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Griggs Street": {
+        "name": "Griggs Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Harvard Avenue": {
+        "name": "Harvard Avenue",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Packards Corner": {
+        "name": "Packards Corner",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Babcock Street": {
+        "name": "Babcock Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Amory Street": {
+        "name": "Amory Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Boston University Central": {
+        "name": "Boston University Central",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Boston University East": {
+        "name": "Boston University East",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Blandford Street": {
+        "name": "Blandford Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Kenmore (GL-B)": {
+        "name": "Kenmore",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Hynes Convention Center (GL-B)": {
+        "name": "Hynes Convention Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Copley (GL-B)": {
+        "name": "Copley",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Arlington (GL-B)": {
+        "name": "Arlington",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Boylston (GL-B)": {
+        "name": "Boylston",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Park Street (GL-B)": {
+        "name": "Park Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Government Center (GL-B)": {
+        "name": "Government Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Cleveland Circle": {
+        "name": "Cleveland Circle",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Englewood Avenue": {
+        "name": "Englewood Avenue",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Dean Road": {
+        "name": "Dean Road",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Tappan Street": {
+        "name": "Tappan Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Washington Square": {
+        "name": "Washington Square",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Fairbanks Street": {
+        "name": "Fairbanks Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Brandon Hall": {
+        "name": "Brandon Hall",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Summit Avenue": {
+        "name": "Summit Avenue",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Coolidge Corner": {
+        "name": "Coolidge Corner",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Saint Paul Street": {
+        "name": "Saint Paul Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Kent Street": {
+        "name": "Kent Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Hawes Street": {
+        "name": "Hawes Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Saint Mary's Street": {
+        "name": "Saint Mary's Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Kenmore (GL-C)": {
+        "name": "Kenmore",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Hynes Convention Center (GL-C)": {
+        "name": "Hynes Convention Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Copley (GL-C)": {
+        "name": "Copley",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Arlington (GL-C)": {
+        "name": "Arlington",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Boylston (GL-C)": {
+        "name": "Boylston",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Park Street (GL-C)": {
+        "name": "Park Street",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Government Center (GL-C)": {
+        "name": "Government Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Bowdoin": {
+        "name": "Bowdoin",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Government Center (B)": {
+        "name": "Government Center (B)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "State Street (B)": {
+        "name": "State Street (B)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Aquarium": {
+        "name": "Aquarium",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Maverick": {
+        "name": "Maverick",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Airport": {
+        "name": "Airport",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Wood Island": {
+        "name": "Wood Island",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Orient Heights": {
+        "name": "Orient Heights",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Suffolk Downs": {
+        "name": "Suffolk Downs",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Beachmont": {
+        "name": "Beachmont",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Revere Beach": {
+        "name": "Revere Beach",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Wonderland": {
+        "name": "Wonderland",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Alewife": {
+        "name": "Alewife",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Davis": {
+        "name": "Davis",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Porter": {
+        "name": "Porter",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Harvard": {
+        "name": "Harvard",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Central": {
+        "name": "Central",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Kendall/MIT": {
+        "name": "Kendall/MIT",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Charles/MGH": {
+        "name": "Charles/MGH",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Park Street (R)": {
+        "name": "Park Street (R)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Downtown Crossing (R)": {
+        "name": "Downtown Crossing (R)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "South Station": {
+        "name": "South Station",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Broadway": {
+        "name": "Broadway",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Andrew": {
+        "name": "Andrew",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "JFK/UMass": {
+        "name": "JFK/UMass",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Savin Hill": {
+        "name": "Savin Hill",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Fields Corner": {
+        "name": "Fields Corner",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Shawmut": {
+        "name": "Shawmut",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Ashmont": {
+        "name": "Ashmont",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "North Quincy": {
+        "name": "North Quincy",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Wollaston": {
+        "name": "Wollaston",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Quincy Center": {
+        "name": "Quincy Center",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Quincy Adams": {
+        "name": "Quincy Adams",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Braintree": {
+        "name": "Braintree",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Ashmont (HSE)": {
+        "name": "Ashmont (HSE)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Cedar Grove": {
+        "name": "Cedar Grove",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Butler": {
+        "name": "Butler",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Milton": {
+        "name": "Milton",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Central Ave": {
+        "name": "Central Ave",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Valley Rd": {
+        "name": "Valley Rd",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Capen St": {
+        "name": "Capen St",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Mattapan": {
+        "name": "Mattapan",
+        "longitude": 0,
+        "latitude": 0
+    }
+}
