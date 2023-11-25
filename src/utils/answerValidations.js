@@ -3,7 +3,7 @@ import mbtaSolutions from './../data/mbta/solutions.json';
 import mbtaRoutings from './../data/mbta/routings.json';
 import transfers from './../data/transfers.json';
 
-const GAME_EPOCH = new Date('November 25, 2023 00:00:00').valueOf();
+const GAME_EPOCH = new Date('November 24, 2023 00:00:00').valueOf();
 
 const today = new Date();
 const now = Date.now();
