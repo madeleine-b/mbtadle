@@ -11,12 +11,56 @@ const now = Date.now();
 const isSimilarToAnswerTrain = (guess, index) => {
   let begin;
   let end;
-  const answer = todaysTrip()[index];
-  const solution = todaysTripInLines();
-  // FIXME
+  const solution = todaysSolution();
+  const answer = todaysTripInLines()[index];
 
+  switch (index) {
+    case 0:
+      begin = solution.origin;
+      end = solution.first_transfer_arrival;
+      break;
+    case 1:
+      begin = solution.first_transfer_departure;
+      end = solution.second_transfer_arrival;
+      break;
+    default:
+      begin = solution.second_transfer_departure;
+      end = solution.destination;
+  }
+
+  const guessSubrouting = retrieveSubrouting(guess, mbtaRoutings, begin, end);
+
+  if (!guessSubrouting) {
+    return false;
+  }
+
+  const answerSubrouting = retrieveSubrouting(answer, mbtaRoutings, begin, end);
+
+  const guessSubroutingInner = guessSubrouting.slice(1, guessSubrouting.length);
+  const answerSubroutingInner = answerSubrouting.slice(1, answerSubrouting.length);
+
+  if (guessSubroutingInner.every(s => answerSubroutingInner.includes(s)) || answerSubroutingInner.every(s => guessSubroutingInner.includes(s))) {
+    return (guessSubrouting.includes(begin) && answerSubrouting.includes(begin)) || (guessSubrouting.includes(end) && answerSubrouting.includes(end));
+  }
 
   return false;
+}
+
+const retrieveSubrouting = (train, routings, begin, end) => {
+  const generalRoutingsForTrain = routings[train].map(s => 
+    s.replace(" (GL-E)", "").replace(" (GL-D)", "").replace(" (GL-C)", "").replace(" (GL-B)", ""));
+
+  const beginIndex = [begin, transfers[begin]].flat().filter(n => n).map(s => generalRoutingsForTrain.indexOf(s)).find(i => i > -1);
+  const endIndex = [end, transfers[end]].flat().filter(n => n).map(s => generalRoutingsForTrain.indexOf(s)).find(i => i > -1);
+
+  if (beginIndex == null || endIndex == null) {
+    return;
+  }
+
+  if (beginIndex < endIndex) {
+    return routings[train].slice(beginIndex, endIndex + 1);
+  }
+  return routings[train].slice(endIndex, beginIndex + 1);
 }
 
 export const isValidGuess = (guess) => {

@@ -73,7 +73,6 @@ const App = () => {
   const [settings, setSettings] = useState(() => loadSettings());
 
   const solution = todaysSolution();
-  console.log(solution);
 
   useEffect(() => {
     saveGameStateToLocalStorage({ guesses, answer: flattenedTodaysTrip() })

@@ -155,47 +155,47 @@
         "latitude": 0
     },
     "Copley (GL-E)": {
-        "name": "Copley (GL-E)",
+        "name": "Copley",
         "longitude": 0,
         "latitude": 0
     },
     "Arlington (GL-E)": {
-        "name": "Arlington (GL-E)",
+        "name": "Arlington",
         "longitude": 0,
         "latitude": 0
     },
     "Boylston (GL-E)": {
-        "name": "Boylston (GL-E)",
+        "name": "Boylston",
         "longitude": 0,
         "latitude": 0
     },
     "Park Street (GL-E)": {
-        "name": "Park Street (GL-E)",
+        "name": "Park Street",
         "longitude": 0,
         "latitude": 0
     },
     "Government Center (GL-E)": {
-        "name": "Government Center (GL-E)",
+        "name": "Government Center",
         "longitude": 0,
         "latitude": 0
     },
     "Haymarket (GL-E)": {
-        "name": "Haymarket (GL-E)",
+        "name": "Haymarket",
         "longitude": 0,
         "latitude": 0
     },
     "North Station (GL-E)": {
-        "name": "North Station (GL-E)",
+        "name": "North Station",
         "longitude": 0,
         "latitude": 0
     },
     "Science Park/West End (GL-E)": {
-        "name": "Science Park/West End (GL-E)",
+        "name": "Science Park/West End",
         "longitude": 0,
         "latitude": 0
     },
     "Lechmere (GL-E)": {
-        "name": "Lechmere (GL-E)",
+        "name": "Lechmere",
         "longitude": 0,
         "latitude": 0
     },
@@ -290,12 +290,12 @@
         "latitude": 0
     },
     "Kenmore (GL-D)": {
-        "name": "Kenmore (GL-D)",
+        "name": "Kenmore",
         "longitude": 0,
         "latitude": 0
     },
     "Hynes Convention Center (GL-D)": {
-        "name": "Hynes Convention Center (GL-D)",
+        "name": "Hynes Convention Center",
         "longitude": 0,
         "latitude": 0
     },
@@ -329,13 +329,8 @@
         "longitude": 0,
         "latitude": 0
     },
-    "Lechmere (GL-D)": {
-        "name": "Lechmere",
-        "longitude": 0,
-        "latitude": 0
-    },
-    "Union Square": {
-        "name": "Union Square",
+    "North Station (GL-D)": {
+        "name": "North Station",
         "longitude": 0,
         "latitude": 0
     },
@@ -344,8 +339,13 @@
         "longitude": 0,
         "latitude": 0
     },
-    "North Station (GL-D)": {
-        "name": "North Station (GL-D)",
+    "Lechmere (GL-D)": {
+        "name": "Lechmere",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Union Square": {
+        "name": "Union Square",
         "longitude": 0,
         "latitude": 0
     },
@@ -409,18 +409,8 @@
         "longitude": 0,
         "latitude": 0
     },
-    "Pleasant Street": {
-        "name": "Pleasant Street",
-        "longitude": 0,
-        "latitude": 0
-    },
-    "Saint Paul Street (B)": {
-        "name": "Saint Paul Street",
-        "longitude": 0,
-        "latitude": 0
-    },
-    "Boston University West": {
-        "name": "Boston University West",
+    "Amory Street": {
+        "name": "Amory Street",
         "longitude": 0,
         "latitude": 0
     },
@@ -519,7 +509,7 @@
         "longitude": 0,
         "latitude": 0
     },
-    "Saint Paul Street (C)": {
+    "Saint Paul Street": {
         "name": "Saint Paul Street",
         "longitude": 0,
         "latitude": 0
@@ -580,12 +570,12 @@
         "latitude": 0
     },
     "Government Center (B)": {
-        "name": "Government Center",
+        "name": "Government Center (B)",
         "longitude": 0,
         "latitude": 0
     },
     "State Street (B)": {
-        "name": "State Street",
+        "name": "State Street (B)",
         "longitude": 0,
         "latitude": 0
     },
@@ -670,12 +660,12 @@
         "latitude": 0
     },
     "Park Street (R)": {
-        "name": "Park Street",
+        "name": "Park Street (R)",
         "longitude": 0,
         "latitude": 0
     },
     "Downtown Crossing (R)": {
-        "name": "Downtown Crossing",
+        "name": "Downtown Crossing (R)",
         "longitude": 0,
         "latitude": 0
     },
@@ -741,6 +731,46 @@
     },
     "Braintree": {
         "name": "Braintree",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Ashmont (HSE)": {
+        "name": "Ashmont (HSE)",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Cedar Grove": {
+        "name": "Cedar Grove",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Butler": {
+        "name": "Butler",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Milton": {
+        "name": "Milton",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Central Ave": {
+        "name": "Central Ave",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Valley Rd": {
+        "name": "Valley Rd",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Capen St": {
+        "name": "Capen St",
+        "longitude": 0,
+        "latitude": 0
+    },
+    "Mattapan": {
+        "name": "Mattapan",
         "longitude": 0,
         "latitude": 0
     }
