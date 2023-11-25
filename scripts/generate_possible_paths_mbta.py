@@ -1,4 +1,5 @@
 import json
+import random
 
 with open("data/mbta/routings.json", "r") as r:
 	routings = json.load(r)
@@ -35,4 +36,5 @@ with open("generated_solutions.json", "w") as f:
 	json.dump(obj=routes, fp=f, indent=4)
 
 with open("generated_answers.json", "w") as f:
+	random.shuffle(answers)
 	json.dump(obj=answers, fp=f, indent=4)

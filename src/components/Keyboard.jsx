@@ -24,8 +24,12 @@ const Keyboard = (props) => {
           onChar('GLC');
         } else if (key === 'B') {
           onChar('BL');
+        } else if (key === 'A') {
+          onChar('RLA');
         } else if (key === 'R') {
-          onChar('RL');
+          onChar('RLB');
+        } else if (key === 'M') {
+          onChar('RLM');
         } else if (key === 'O') {
           onChar('OL');
         } else if (key === 'E') {
@@ -56,7 +60,7 @@ const Keyboard = (props) => {
     <Grid centered columns={7} className='keyboard'>
       <Grid.Row>
         {
-          ["RL", "GLC", "GLB", "GLD", "GLE", "BL", "OL"].map((routeId) => {
+          ["RLA", "RLB", "RLM", "BL", "OL"].map((routeId) => {
             return (
               <Key
                 id={routeId}
@@ -73,12 +77,27 @@ const Keyboard = (props) => {
           })
         }
       </Grid.Row>
-        <Grid.Row columns={6}>
+        <Grid.Row columns={7}>
           <Grid.Column className='key' stretched>
             <Button onClick={handleEnter} inverted={isDarkMode}>
               Enter
             </Button>
           </Grid.Column>
+          {["GLD", "GLE", "GLC", "GLB"].map((routeId) => {
+            return (
+              <Key
+                id={routeId}
+                key={routeId}
+                isDarkMode={isDarkMode}
+                onClick={onChar}
+                disabled={false}
+                isCorrect={correctRoutes.includes(routeId)}
+                isSimilar={similarRoutes.includes(routeId)}
+                isPresent={presentRoutes.includes(routeId)}
+                isAbsent={absentRoutes.includes(routeId)}
+              />
+            )
+          })}
           <Grid.Column className='key' stretched>
             <Button onClick={handleDelete} inverted={isDarkMode}>
               Delete

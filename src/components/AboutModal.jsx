@@ -31,7 +31,7 @@ const AboutModal = (props) => {
               </Grid.Column>
               <Grid.Column>
                 <Segment placeholder>
-                  <TrainBullet id='RL' size='medium' />
+                  <TrainBullet id='RLA' size='medium' />
                 </Segment>
               </Grid.Column>
               <Grid.Column>

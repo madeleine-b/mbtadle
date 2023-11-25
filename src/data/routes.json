@@ -1,7 +1,21 @@
 {
-  "RL":{
-    "id":"RL",
-    "name":"RL",
+  "RLA":{
+    "id":"RLA",
+    "name":"RL-A",
+    "color": "#e12723",
+    "text_color": null,
+    "alternate_name": null
+  },
+  "RLB":{
+    "id":"RLB",
+    "name":"RL-B",
+    "color": "#e12723",
+    "text_color": null,
+    "alternate_name": null
+  },
+  "RLM":{
+    "id":"RLM",
+    "name":"M",
     "color": "#e12723",
     "text_color": null,
     "alternate_name": null
