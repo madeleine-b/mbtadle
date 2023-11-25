@@ -9,26 +9,30 @@ for i in j["OL"]:
 	data[i] = {"name": i, "longitude": 0, "latitude": 0}
 
 for i in j["GLE"]:
-	if i in j["GLD"] or i in j["GLC"] or i in j["GLB"]:
-		data[i + " (GL-E)"] = {"name": i , "longitude": 0, "latitude": 0}
+	shortened=i[:-7]
+	if shortened + " (GL-D)" in j["GLD"] or shortened + " (GL-C)" + " (GL-C)" in j["GLC"] or shortened + " (GL-B)" in j["GLB"]:
+		data[i] = {"name": shortened, "longitude": 0, "latitude": 0}
 	else:
 		data[i] = {"name": i, "longitude": 0, "latitude": 0}
 
 for i in j["GLD"]:
-	if i in j["GLE"] or i in j["GLC"] or i in j["GLB"]:
-		data[i + " (GL-D)"] = {"name": i, "longitude": 0, "latitude": 0}
+	shortened=i[:-7]
+	if shortened + " (GL-E)" in j["GLE"] or shortened + " (GL-C)" in j["GLC"] or shortened + " (GL-B)" in j["GLB"]:
+		data[i] = {"name": shortened, "longitude": 0, "latitude": 0}
 	else:
 		data[i] = {"name": i, "longitude": 0, "latitude": 0}
 
 for i in j["GLB"]:
-	if i in j["GLD"] or i in j["GLE"] or i in j["GLC"]:
-		data[i + " (GL-B)"] = {"name": i , "longitude": 0, "latitude": 0}
+	shortened=i[:-7]
+	if shortened + " (GL-D)" in j["GLD"] or shortened + " (GL-E)" in j["GLE"] or shortened + " (GL-C)" in j["GLC"]:
+		data[i] = {"name": shortened, "longitude": 0, "latitude": 0}
 	else:
 		data[i] = {"name": i, "longitude": 0, "latitude": 0}
 
 for i in j["GLC"]:
-	if i in j["GLD"] or i in j["GLE"] or i in j["GLB"]:
-		data[i + " (GL-C)"] = {"name": i, "longitude": 0, "latitude": 0}
+	shortened=i[:-7]
+	if shortened + " (GL-D)" in j["GLD"] or shortened + " (GL-E)" in j["GLE"] or shortened + " (GL-B)" in j["GLB"]:
+		data[i] = {"name": shortened, "longitude": 0, "latitude": 0}
 	else:
 		data[i] = {"name": i, "longitude": 0, "latitude": 0}
 
