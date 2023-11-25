@@ -28,6 +28,9 @@ const isSimilarToAnswerTrain = (guess, index) => {
       end = solution.destination;
   }
 
+  begin = removeGLNonsense([begin])[0]
+  end = removeGLNonsense([end])[0]
+
   const guessSubrouting = retrieveSubrouting(guess, mbtaRoutings, begin, end);
 
   if (!guessSubrouting) {
@@ -46,21 +49,24 @@ const isSimilarToAnswerTrain = (guess, index) => {
   return false;
 }
 
-const retrieveSubrouting = (train, routings, begin, end) => {
-  const generalRoutingsForTrain = routings[train].map(s => 
-    s.replace(" (GL-E)", "").replace(" (GL-D)", "").replace(" (GL-C)", "").replace(" (GL-B)", ""));
+const removeGLNonsense = (routeArr) => {
+  return routeArr.map(s => s.replace(" (GL-E)", "").replace(" (GL-D)", "").replace(" (GL-C)", "").replace(" (GL-B)", ""));
+}
 
-  const beginIndex = [begin, transfers[begin]].flat().filter(n => n).map(s => generalRoutingsForTrain.indexOf(s)).find(i => i > -1);
-  const endIndex = [end, transfers[end]].flat().filter(n => n).map(s => generalRoutingsForTrain.indexOf(s)).find(i => i > -1);
+const retrieveSubrouting = (train, routings, begin, end) => {
+  const generalRoutingsForTrain = removeGLNonsense(routings[train]);
+
+  const beginIndex = removeGLNonsense([begin, transfers[begin]].flat().filter(n => n)).map(s => generalRoutingsForTrain.indexOf(s)).find(i => i > -1);
+  const endIndex = removeGLNonsense([end, transfers[end]].flat().filter(n => n)).map(s => generalRoutingsForTrain.indexOf(s)).find(i => i > -1);
 
   if (beginIndex == null || endIndex == null) {
     return;
   }
 
   if (beginIndex < endIndex) {
-    return routings[train].slice(beginIndex, endIndex + 1);
+    return generalRoutingsForTrain.slice(beginIndex, endIndex + 1);
   }
-  return routings[train].slice(endIndex, beginIndex + 1);
+  return generalRoutingsForTrain.slice(endIndex, beginIndex + 1);
 }
 
 export const isValidGuess = (guess) => {
