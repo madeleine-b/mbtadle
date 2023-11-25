@@ -139,6 +139,10 @@ const AboutModal = (props) => {
         <Header as='h4'>Tips</Header>
         <p>Input using keyboard is supported.</p>
 
+        <p><TrainBullet id="RLA" size="small" /> = an Ashmont Red Line train (inbound or outbound)</p>
+        <p><TrainBullet id="RLB" size="small" /> = a Braintree Red Line train (inbound or outbound)</p>
+        <p><TrainBullet id="RLM" size="small" /> = a Mattapan trolley train</p>
+
         <Header as='h4'>About</Header>
 
         <p>Boston version of the original <a href="https://www.subwaydle.com/" target="_blank">NYC Subwaydle</a>, created by <a href="https://www.sunny.ng" target="_blank">Sunny Ng</a><a href='https://twitter.com/_blahblahblah' target='_blank'><Icon name='twitter' link /></a>.</p>
