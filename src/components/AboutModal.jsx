@@ -12,8 +12,17 @@ const AboutModal = (props) => {
       <Modal.Header>How to Play</Modal.Header>
       <Modal.Content scrolling>
         <p>Guess the <strong>MBTAdle</strong> in 6 tries.</p>
-        <p>Each guess must a be a <strong>valid transit trip involving 3 trains and/or buses</strong> using available transfers between them.</p>
-        <p>You need to guess a specific set of three lines that can make the trip.</p>
+        <p>Each guess must a be a <strong>valid transit trip involving 3 trains</strong> using available transfers between them.</p>
+        <p>You need to guess a specific set of three lines that can make the trip. <strong>Multiple routings may be possible</strong>, but your goal is to
+        find the one that matches the puzzle of the day.</p>
+
+        <p><strong>Back tracking is allowed:</strong> you can travel inbound through a station, transfer, then travel back outbound.</p>
+
+        <p>As of right now, <strong>you cannot transfer between branches on the same line</strong>, 
+        i.e. you can't take a <TrainBullet id="GLE" size="small" /> train to Boylston and directly switch to a <TrainBullet id="GLC" size="small" /> train. 
+        I would like to add this improvement in the future.</p>
+
+        <p>Also, you cannot use the Park St / Downtown Crossing concourse to transfer, simulating the difficulty of doing so in real life.</p>
 
         <Header as='h4'>Examples</Header>
         <Segment basic>
@@ -26,50 +35,119 @@ const AboutModal = (props) => {
                       <Icon name="check" fitted />
                     </Label>
                   }
-                  <TrainBullet id='GLC' size='medium' />
+                  <TrainBullet id='RLB' size='medium' />
                 </Segment>
               </Grid.Column>
               <Grid.Column>
                 <Segment placeholder>
+                  <TrainBullet id='OL' size='medium' />
+                </Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment placeholder>
+                  <TrainBullet id='GLD' size='medium' />
+                </Segment>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Segment>
+        <p>The <TrainBullet id='RLB' size='small' /> train is in the correct spot of the trip.</p>
+<Segment basic>
+          <Grid centered columns={4} className={isDarkMode ? 'game-grid dark' : 'game-grid'}>
+            <Grid.Row>
+              <Grid.Column>
+                <Segment placeholder>
+                  <TrainBullet id='OL' size='medium' />
+                </Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment placeholder className='similar'>
+                  {settings.display.showAnswerStatusBadges &&
+                    <Label as='a' floating circular size='tiny'>
+                      <Icon name="sync alternate" fitted />
+                    </Label>
+                  }
+                  <TrainBullet id='GLE' size='medium' />
+                </Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment placeholder>
+                  <TrainBullet id='RLB' size='medium' />
+                </Segment>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Segment>
+        <p>Another train that shares the same routing as the <TrainBullet id='GLE' size='small' /> train is in that spot of the trip.</p>
+
+        <Segment basic>
+          <Grid centered columns={4} className={isDarkMode ? 'game-grid dark' : 'game-grid'}>
+            <Grid.Row>
+              <Grid.Column>
+                <Segment placeholder>
+                  <TrainBullet id='OL' size='medium' />
+                </Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment placeholder className='present'>
+                  {settings.display.showAnswerStatusBadges &&
+                    <Label as='a' floating circular size='tiny'>
+                      <Icon name="arrows alternate horizontal" fitted />
+                    </Label>
+                  }
                   <TrainBullet id='RLA' size='medium' />
                 </Segment>
               </Grid.Column>
               <Grid.Column>
                 <Segment placeholder>
+                  <TrainBullet id='GLE' size='medium' />
+                </Segment>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Segment>
+        <p>The <TrainBullet id='RLA' size='small' /> train is part of the trip, but in the wrong spot.</p>
+
+        <Segment basic>
+          <Grid centered columns={4} className={isDarkMode ? 'game-grid dark' : 'game-grid'}>
+            <Grid.Row>
+              <Grid.Column>
+                <Segment placeholder>
+                  <TrainBullet id='GLD' size='medium' />
+                </Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment placeholder>
+                  <TrainBullet id='OL' size='medium' />
+                </Segment>
+              </Grid.Column>
+              <Grid.Column>
+                <Segment placeholder className='absent'>
+                  {settings.display.showAnswerStatusBadges &&
+                    <Label as='a' floating circular size='tiny'>
+                      <Icon name="x" fitted />
+                    </Label>
+                  }
                   <TrainBullet id='BL' size='medium' />
                 </Segment>
               </Grid.Column>
             </Grid.Row>
           </Grid>
         </Segment>
-        <p>The <TrainBullet id='BL' size='small' /> train is in the correct spot of the trip.</p>
-
-
-        <p><strong>Multiple routings may be possible</strong> to make the trip, but your goal is to
-        find <strong>the one routing</strong> that matches the puzzle of the day. The solution <strong>may or may not</strong> be the fastest or efficient routing. It should also be noted that in the New York City Subway system, there are <strong>multiple stations with the same name</strong>.</p>
-        <p><strong>No back tracking:</strong> No stations can be traveled through more than once.</p>
-        <p><strong>Transfers are only allowed if and when lines diverge</strong> (i.e. if two lines are making the same stops, you can't switch back and forth between them,
-          You can switch from a local line to an express line then back to the same local line, but you can't switch from an express line to a local line back to the same express line).</p>
-        <p><strong>Transfers are allowed to/from St George station</strong> via <strong>South Ferry</strong>, <strong>Whitehall St–South Ferry</strong> or <strong>Bowling Green stations</strong> (using the Staten Island Ferry). Transfers are also allowed between stations with <strong>free out-of-system transfers</strong>.
-          It is assumed that all stations allow transfer in all directions, even when they're not physically possible in real life (limitation due to this data is not being publicly available).</p>
-        <p>Routing for each train line is based on <strong>midday schedule</strong> (i.e. no peak-direction express, no peak-only branches, no 
-          Z, B terminates at 145 St). <strong>Weekend puzzles are based on regularly-scheduled weekend routings.</strong></p>
-        <p>Follow <a href='https://twitter.com/subwaydle' target='_blank'>@subwaydle<Icon name='twitter' link /></a> for the previous day's solution and stats, updated daily.</p>
+        <p>The <TrainBullet id='BL' size='small' /> train is not part of the trip in any spot.</p>
 
         <Header as='h4'>Tips</Header>
         <p>Input using keyboard is supported.</p>
 
         <Header as='h4'>About</Header>
 
+        <p>The original <a href="https://www.subwaydle.com/" target="_blank">NYC Subwaydle</a>.</p>
+
         <p>Subwaydles around the world: <a href="https://hk.subwaydle.com" target="_blank">Hong Kong</a>, <a href="https://london.subwaydle.com" target="_blank">London</a>.</p>
 
-        <p>Inspired by <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank">Wordle</a>,
-          its <a href="https://github.com/hannahcode/wordle" target="_blank">open-source clone</a>, <a href="https://nerdlegame.com/" target="_blank">Nerdle</a>,
-          and <a href="https://www.nytransitmuseum.org/">New York Transit Museum</a> Trivia Nights.</p>
+        <p>Created by Madeleine Barowsky, with deepest thanks to <a href="https://www.sunny.ng" target="_blank">Sunny Ng</a><a href='https://twitter.com/_blahblahblah' target='_blank'><Icon name='twitter' link /></a> for building the original.</p>
+        <p><a href="https://github.com/madeleine-b/mbtadle" target="_blank">Source code</a>.</p>
 
-        <p>Created by <a href="https://www.sunny.ng" target="_blank">Sunny Ng</a><a href='https://twitter.com/_blahblahblah' target='_blank'><Icon name='twitter' link /></a></p>
-        <p><a href="https://github.com/blahblahblah-/subwaydle" target="_blank">Source code</a>.</p>
-        
       </Modal.Content>
     </Modal>
   );
