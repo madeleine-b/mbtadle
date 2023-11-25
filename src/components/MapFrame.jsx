@@ -16,8 +16,9 @@ const MANHATTAN_TILT = 29;
 const MapFrame = (props) => {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(-73.98119);
-  const [lat, setLat] = useState(40.75855);
+  const [lng, setLng] = useState(-71.083124);
+  const [lat, setLat] = useState(42.353297);
+
   const [zoom, setZoom] = useState(12);
   const solution = todaysSolution();
 
@@ -56,16 +57,7 @@ const MapFrame = (props) => {
     const endCoord = [stations[line.end].longitude, stations[line.end].latitude];
     let coordinates = [];
 
-    if (line.route === 'A') {
-      const lineA1 = shapes['A1'];
-      if (lineA1.some((coord) => coord[0] === beginCoord[0] && coord[1] === beginCoord[1]) && lineA1.some((coord) => coord[0] === endCoord[0] && coord[1] === endCoord[1])) {
-        shape = shapes['A1'];
-      } else {
-        shape = shapes['A2'];
-      }
-    } else {
-      shape = shapes[line.route];
-    }
+    shape = shapes[line.route];
 
     const beginIndex = shape.findIndex((coord) => coord[0] === beginCoord[0] && coord[1] === beginCoord[1]);
     const endIndex = shape.findIndex((coord) => coord[0] === endCoord[0] && coord[1] === endCoord[1]);
@@ -98,8 +90,8 @@ const MapFrame = (props) => {
       minZoom: 9,
       zoom: zoom,
       maxBounds: [
-        [-74.8113, 40.1797],
-        [-73.3584, 41.1247]
+        [-71.388197, 42.171911],
+        [-70.950157, 42.430004]
       ],
       maxPitch: 0,
     });
@@ -212,4 +204,4 @@ const MapFrame = (props) => {
   );
 }
 
-export default MapFrame;
+export default MapFrame; 
