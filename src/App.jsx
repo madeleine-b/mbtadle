@@ -12,6 +12,7 @@ import {
   isValidGuess,
   isWinningGuess,
   updateGuessStatuses,
+  todaysTripInLines,
   flattenedTodaysTrip,
   todaysSolution,
   todayGameIndex
@@ -57,7 +58,7 @@ const App = () => {
       }
       return [];
     }
-    const gameWasWon = loaded.guesses.map((g) => g.join('-')).includes(flattenedTodaysTrip())
+    const gameWasWon = loaded.guesses.map((g) => g.join('-')).includes(todaysTripInLines().join("-"))
     if (gameWasWon) {
       setIsGameWon(true);
       setIsSolutionsOpen(true);

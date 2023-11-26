@@ -99,7 +99,7 @@ export const todaysTrip = () => {
   return mbtaAnswers[index % mbtaAnswers.length];
 }
 
-const todaysTripInLines = () => {
+export const todaysTripInLines = () => {
   return todaysSolution()["solution"].split("-");
 }
 
