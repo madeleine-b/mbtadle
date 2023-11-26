@@ -62,10 +62,12 @@ const App = () => {
     if (gameWasWon) {
       setIsGameWon(true);
       setIsSolutionsOpen(true);
+      window.gtag("event", "win_game", {"guesses": loaded.guesses.length});
     }
     if (loaded.guesses.length === 6 && !gameWasWon) {
       setIsGameLost(true)
       setIsSolutionsOpen(true);
+      window.gtag("event", "lose_game");
     }
     updateGuessStatuses(loaded.guesses, setCorrectRoutes, setSimilarRoutes, setPresentRoutes, setAbsentRoutes, setSimilarRoutesIndexes);
     return loaded.guesses;

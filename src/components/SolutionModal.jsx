@@ -3,7 +3,6 @@ import { Modal, Header, Button, Icon } from 'semantic-ui-react';
 
 import Stats from './Stats';
 import TrainBullet from './TrainBullet';
-import MapFrame from './MapFrame';
 import Countdown from './Countdown';
 
 import { todaysTrip, todaysSolution } from '../utils/answerValidations';
