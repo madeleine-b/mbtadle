@@ -34,7 +34,7 @@ const Keyboard = (props) => {
           onChar('OL');
         } else if (key === 'E') {
           onChar('GLE');
-        } else if (key === 'B') {
+        } else if (key === 'G') {
           onChar('GLB');
         } else if (key === 'D') {
           onChar('GLD');

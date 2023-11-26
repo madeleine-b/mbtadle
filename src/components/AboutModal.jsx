@@ -20,7 +20,7 @@ const AboutModal = (props) => {
 
         <p>As of right now, <strong>you cannot transfer between branches on the same line</strong>, 
         i.e. you can't take a <TrainBullet id="GLE" size="small" /> train to Boylston and directly switch to a <TrainBullet id="GLC" size="small" /> train. 
-        I would like to add this improvement in the future.</p>
+        </p>
 
         <p>Also, you cannot use the Park St / Downtown Crossing concourse to transfer, simulating the difficulty of doing so in real life.</p>
 
@@ -138,10 +138,14 @@ const AboutModal = (props) => {
 
         <Header as='h4'>Tips</Header>
         <p>Input using keyboard is supported.</p>
+        <p>Use <strong>G</strong> for <TrainBullet id="GLB" size="small" /></p>
+        <p>Use <strong>R</strong> for <TrainBullet id="RLB" size="small" /></p>
 
         <p><TrainBullet id="RLA" size="small" /> = an Ashmont Red Line train (inbound or outbound)</p>
         <p><TrainBullet id="RLB" size="small" /> = a Braintree Red Line train (inbound or outbound)</p>
         <p><TrainBullet id="RLM" size="small" /> = a Mattapan trolley train</p>
+
+      
 
         <Header as='h4'>About</Header>
 
