@@ -5,7 +5,7 @@ import Stats from './Stats';
 import TrainBullet from './TrainBullet';
 import Countdown from './Countdown';
 
-import { todaysTrip, todaysSolution } from '../utils/answerValidations';
+import { todaysTrip, todaysTripInLines, todaysSolution } from '../utils/answerValidations';
 import { shareStatus } from '../utils/share';
 
 import stations from "../data/stations.json";
@@ -19,7 +19,7 @@ const SolutionModal = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalHidden, setIsModalHidden] = useState(false);
   const modal = useRef(null);
-  const trip = todaysSolution()["solution"].split("-");
+  const trip = todaysTripInLines();
   const solution = todaysSolution();
 
   const title = isGameWon ? "Yay! You completed today's trip!" : "Aww, looks like you got lost on the T...";

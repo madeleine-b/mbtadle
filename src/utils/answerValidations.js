@@ -71,7 +71,7 @@ const retrieveSubrouting = (train, routings, begin, end) => {
 
 export const isValidGuess = (guess) => {
   const flattenedGuess = guess.join('-');
-  const routesThatExist = Object.values(mbtaSolutions).map((sol) => { return sol['solution']; });
+  const routesThatExist = Object.values(mbtaSolutions).map((sol) => { return sol['solution']; }).flat();
   return routesThatExist.includes(flattenedGuess);
 }
 
@@ -100,7 +100,12 @@ export const todaysTrip = () => {
 }
 
 export const todaysTripInLines = () => {
-  return todaysSolution()["solution"].split("-");
+  // this is weird and less than ideal. at the start of the day we will randomly choose one of the possible
+  // routings in the case more than one goes through with the exact same stations (RLB and RLA e.g.)
+  // we keep around all possible routings for checking validity
+  const numSolns = todaysSolution()["solution"].length;
+  const chosenIndex = todayGameIndex() % numSolns;
+  return todaysSolution()["solution"][chosenIndex].split("-");
 }
 
 export const flattenedTodaysTrip = () => {
@@ -112,7 +117,7 @@ export const todaysSolution = () => {
 }
 
 export const isWinningGuess = (guess) => {
-  return guess.join('-') === todaysSolution()["solution"];
+  return guess.join('-') === todaysTripInLines().join('-');
 }
 
 export const updateGuessStatuses = (guesses, setCorrectRoutes, setSimilarRoutes, setPresentRoutes, setAbsentRoutes, setSimilarRoutesIndexes, correctRoutes, similarRoutes, presentRoutes, absentRoutes, similarRoutesIndexes) => {
