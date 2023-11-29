@@ -20,7 +20,7 @@ const Keyboard = (props) => {
         onDelete();
       } else {
         const key = e.key.toUpperCase()
-        if (key === 'G' || key === 'C') {
+        if (key === 'C') {
           onChar('GLC');
         } else if (key === 'B') {
           onChar('BL');
