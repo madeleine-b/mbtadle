@@ -28,6 +28,7 @@ const SolutionModal = (props) => {
   const handleShareClick = () => {
     shareStatus(guesses, !isGameWon);
     if (!navigator.share || !isIos) {
+      window.gtag("event", "share_result");
       setIsShareButtonShowCopied(true);
       setTimeout(() => {
         setIsShareButtonShowCopied(false)
