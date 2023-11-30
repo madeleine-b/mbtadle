@@ -85,7 +85,7 @@ const MapFrame = (props) => {
     if (map.current) return; // initialize map only once
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/mbarowsky/clpkrvi5d00fn01qj0h4b1416?optimize=true',
+      style: 'mapbox://styles/mapbox/dark-v11',
       center: [lng, lat],
       bearing: MANHATTAN_TILT,
       minZoom: 9,
@@ -146,7 +146,15 @@ const MapFrame = (props) => {
         "type": "geojson",
         "data": stopsJson
       });
-      map.current.addLayer({
+
+      // map.current.loadImage(
+      //   './express-stop.png', // Path to your image here
+      //   (error, image) => {
+      //   if (error) throw error;
+      //      map.addImage('express_stop', image);
+      //      console.log("added image");
+           
+    map.current.addLayer({
         "id": "Stops",
         "type": "symbol",
         "source": "Stops",
@@ -168,11 +176,14 @@ const MapFrame = (props) => {
           "text-color": '#ffffff',
         },
       });
+      
+
+      
       const bounds = coordinates.reduce((bounds, coord) => {
         return bounds.extend(coord);
       }, new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));
 
-     /* if (!bounds.isEmpty()) {
+      if (!bounds.isEmpty()) {
         map.current.fitBounds(bounds, {
           padding: {
             top: 20,
@@ -182,7 +193,7 @@ const MapFrame = (props) => {
           },
           bearing: MANHATTAN_TILT,
         });
-      }*/
+      }
     });
 
 
