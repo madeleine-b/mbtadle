@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 
-import { todaysTrip, todaysSolution } from '../utils/answerValidations';
+import { todaysTripInLines, todaysSolution } from '../utils/answerValidations';
 
 import stations from "../data/stations.json";
 import routes from "../data/routes.json";
@@ -11,13 +11,14 @@ import './MapFrame.scss';
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
+
 const MANHATTAN_TILT = 29;
 
 const MapFrame = (props) => {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(-71.083124);
-  const [lat, setLat] = useState(42.353297);
+  const [lng, setLng] = useState(-71.105505);
+  const [lat, setLat] = useState(42.362561);
 
   const [zoom, setZoom] = useState(12);
   const solution = todaysSolution();
@@ -53,8 +54,8 @@ const MapFrame = (props) => {
   const lineGeoJson = (line) => {
     const route = routes[line.route];
     let shape;
-    const beginCoord = [stations[line.begin].longitude, stations[line.begin].latitude];
-    const endCoord = [stations[line.end].longitude, stations[line.end].latitude];
+    const beginCoord = [stations[line.begin].latitude, stations[line.begin].longitude];
+    const endCoord = [stations[line.end].latitude, stations[line.end].longitude];
     let coordinates = [];
 
     shape = shapes[line.route];
@@ -75,7 +76,7 @@ const MapFrame = (props) => {
       },
       "geometry": {
         "type": "LineString",
-        "coordinates": coordinates
+        "coordinates": coordinates.map((i) => [i[1], i[0]])
       }
     }
   }
@@ -90,8 +91,8 @@ const MapFrame = (props) => {
       minZoom: 9,
       zoom: zoom,
       maxBounds: [
-        [-71.388197, 42.171911],
-        [-70.950157, 42.430004]
+        [-71.559417, 42.070747],
+        [-70.802049, 42.515720]
       ],
       maxPitch: 0,
     });
@@ -100,8 +101,7 @@ const MapFrame = (props) => {
 
     map.current.on('load', () => {
       map.current.resize();
-      const trip = todaysTrip();
-      const solution = todaysSolution();
+      const trip = todaysTripInLines();
       let coordinates = [];
       [
         {
@@ -172,7 +172,7 @@ const MapFrame = (props) => {
         return bounds.extend(coord);
       }, new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));
 
-      if (!bounds.isEmpty()) {
+     /* if (!bounds.isEmpty()) {
         map.current.fitBounds(bounds, {
           padding: {
             top: 20,
@@ -182,7 +182,7 @@ const MapFrame = (props) => {
           },
           bearing: MANHATTAN_TILT,
         });
-      }
+      }*/
     });
 
 
