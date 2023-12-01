@@ -22,8 +22,13 @@ yarn start
 
 ## Future Improvements
 
-* Map visualization of the route after the puzzle is revealed
+* ~~Map visualization of the route after the puzzle is revealed~~
 * Silver Line...maybe 
 * Key bus routes
 * Green line branch transfers  
 * Park St / Downtown Crossing concourse...maybe
+
+
+## Note for developers
+
+To reduce bundle size (from 16.6MB to 1.3MB), the game is serving the first 8 years (exactly 2920 answers) of routes. The full answer and solution files are found under scripts, in both minified (pretty-answers/pretty-solutions) and regular (all-answers/all-solutions).
