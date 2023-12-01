@@ -71,7 +71,7 @@ const retrieveSubrouting = (train, routings, begin, end) => {
 
 export const isValidGuess = (guess) => {
   const flattenedGuess = guess.join('-');
-  const routesThatExist = Object.values(mbtaSolutions).map((sol) => { return sol['solution']; }).flat();
+  const routesThatExist = ['GLE-OL-BL', 'OL-BL-GLD', 'GLD-OL-GLE', 'GLD-OL-RLB', 'OL-RLA-GLE', 'BL-OL-GLE', 'GLD-OL-BL', 'GLE-RLB-OL', 'OL-RLA-GLC', 'OL-RLB-GLE', 'OL-RLB-GLB', 'RLA-GLD-BL', 'RLA-OL-GLE', 'BL-GLE-RLA', 'GLE-RLA-OL', 'GLB-BL-OL', 'OL-RLB-GLC', 'RLB-OL-GLE', 'OL-GLD-BL', 'GLC-RLB-OL', 'GLE-RLA-RLM', 'OL-GLE-BL', 'RLA-GLD-OL', 'GLD-RLA-RLM', 'OL-BL-GLC', 'OL-GLE-RLB', 'RLM-RLA-OL', 'OL-GLD-OL', 'RLA-GLE-BL', 'RLA-GLC-BL', 'GLE-OL-RLB', 'OL-RLB-GLD', 'RLM-RLA-GLE', 'OL-BL-GLB', 'RLB-OL-BL', 'RLA-GLB-BL', 'BL-OL-RLA', 'OL-GLD-RLB', 'GLD-RLB-OL', 'BL-GLD-OL', 'GLE-BL-OL', 'GLC-RLA-RLM', 'OL-GLE-OL', 'OL-GLD-RLA', 'GLB-RLA-OL', 'RLB-OL-GLD', 'GLC-BL-OL', 'GLD-OL-RLA', 'RLB-GLE-BL', 'GLD-BL-OL', 'BL-GLB-RLB', 'GLE-OL-GLD', 'RLA-OL-BL', 'BL-GLD-RLB', 'RLM-RLA-GLD', 'GLB-RLA-RLM', 'BL-OL-RLB', 'OL-RLA-GLB', 'GLD-RLA-OL', 'BL-OL-GLD', 'RLM-RLA-GLC', 'OL-RLA-RLM', 'GLB-RLB-OL', 'BL-GLE-OL', 'BL-GLB-RLA', 'GLC-RLA-OL', 'RLB-GLD-BL', 'GLE-OL-RLA', 'RLB-GLC-BL', 'RLB-GLE-OL', 'BL-GLC-RLA', 'BL-GLD-RLA', 'RLB-GLD-OL', 'BL-GLC-RLB', 'RLA-GLE-OL', 'RLB-GLB-BL', 'RLA-OL-GLD', 'OL-RLA-GLD', 'RLM-RLA-GLB', 'GLD-OL-GLD', 'BL-GLE-RLB', 'OL-BL-GLE', 'GLE-OL-GLE', 'OL-GLE-RLA'];
   return routesThatExist.includes(flattenedGuess);
 }
 
