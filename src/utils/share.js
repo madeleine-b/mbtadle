@@ -30,5 +30,5 @@ const generateEmojiGrid = (guesses) => {
         })
         .join('');
     })
-    .join('\n');
+    .join('\n') + "\n\nmbtadle.com\n";
 }
