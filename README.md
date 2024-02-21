@@ -2,7 +2,7 @@
 
 A Boston version of the Wordle-inspired NYC Subway daily puzzle game. Contains some source code lifted from the [open-source clone](https://github.com/cwackerfuss/word-guessing-game) by Hannah Park. MBTAdle is a static JavaScript app, written using Create React App with React, Sass, and Semantic UI React. A few Python scripts were written to generate JSON data files used by the app.
 
-See it live at TBD
+See it live at https://mbtadle.com
 
 Inspirations:
 * [Subwaydle](https://www.subwaydle.com/)
