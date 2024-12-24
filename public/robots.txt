@@ -1,3 +1,16 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: CCbot
+User-agent: FacebookBot
+User-agent: Google-Extended
+User-agent: GPTBot
+User-agent: PiplBot
+User-agent: Bytespider
+User-agent: ClaudeBot
+User-agent: ImagesiftBot
+User-agent: ChatGPT-User
+User-agent: omgili
+User-agent: Diffbot
+User-agent: PerplexityBot
+Disallow: /
